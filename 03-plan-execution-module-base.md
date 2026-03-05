@@ -18,8 +18,8 @@ Chaque étape suit ce cycle :
 ## Étape 0 — Scaffolding
 
 ### Pre-check
-- [ ] Node.js ≥ 18, pnpm, VSCode, Git installés
-- [ ] Dépôt GitHub créé (vide)
+ - [x] Node.js ≥ 18, pnpm, VSCode, Git installés
+ - [x] Dépôt GitHub créé (vide)
 
 ### Tâches
 - **0.1** Initialiser le dépôt (`git init`, `pnpm init`)
@@ -36,16 +36,16 @@ Chaque étape suit ce cycle :
 - **0.7** Icône placeholder `assets/icon.svg`
 
 ### Validation
-- [ ] `pnpm install` OK (racine + webview-ui)
-- [ ] Structure conforme
-- [ ] Commit initial + push GitHub
+- [x] `pnpm install` OK (racine + webview-ui)
+ - [x] Structure conforme
+ - [x] Commit initial + push GitHub
 
 ---
 
 ## Étape 1 — Extension minimale
 
 ### Pre-check
-- [ ] Étape 0 validée
+ - [x] Étape 0 validée
 
 ### Tâches
 - **1.1** `src/extension.ts` : `activate()` avec `console.log`, `deactivate()` vide
@@ -53,19 +53,19 @@ Chaque étape suit ce cycle :
 - **1.3** `.vscode/tasks.json` pour la tâche compile
 
 ### Test
-- [ ] `pnpm run compile` OK
-- [ ] F5 → fenêtre dev host s'ouvre
-- [ ] "Letta Code extension activated" dans la console
+- [x] `pnpm run compile` OK
+- [x] F5 → fenêtre dev host s'ouvre
+ - [x] "Letta Code extension activated" dans la console
 
 ### Validation
-- [ ] Extension s'active sans erreur ni warning
+ - [x] Extension s'active sans erreur ni warning
 
 ---
 
 ## Étape 2 — Webview dans le sidebar
 
 ### Pre-check
-- [ ] Étape 1 validée
+ - [x] Étape 1 validée
 
 ### Tâches
 - **2.1** `src/providers/chatProvider.ts` : implémenter `WebviewViewProvider`
@@ -80,21 +80,21 @@ Chaque étape suit ce cycle :
 - **2.4** Enregistrer le provider dans `extension.ts`
 
 ### Test
-- [ ] `pnpm run build-webview` OK
-- [ ] F5 → icône dans activity bar
-- [ ] Clic → panneau sidebar avec "Letta Code — Chargement..."
-- [ ] Pas d'erreur CSP dans la console webview
+- [x] `pnpm run build-webview` OK
+- [x] F5 → icône dans activity bar
+ - [x] Clic → panneau sidebar avec "Letta Code — Chargement..."
+ - [x] Pas d'erreur CSP dans la console webview
 
 ### Validation
-- [ ] Webview s'affiche, thème respecté (dark/light)
-- [ ] Panneau survit au hide/show
+ - [x] Webview s'affiche, thème respecté (dark/light)
+ - [x] Panneau survit au hide/show
 
 ---
 
 ## Étape 3 — Communication bidirectionnelle
 
 ### Pre-check
-- [ ] Étape 2 validée
+ - [x] Étape 2 validée
 
 ### Tâches
 - **3.1** `webview-ui/src/utils/vscode-api.ts` : `postMessage()`, `onMessage()`
