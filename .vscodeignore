@@ -1,0 +1,10 @@
+.vscode/**
+.github/**
+.gitignore
+.pnpm-debug.log
+tsconfig.json
+webview-ui/**
+!webview-ui/dist/**
+src/**
+node_modules/**
+out/webview-ui/assets/*.map
